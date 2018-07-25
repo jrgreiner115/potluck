@@ -27,11 +27,6 @@ usr_list = [
   {name: "Radagast", username: "radagast", password: "password"},
   {name: "Dwalin", username: "Dwalin", password: "password"},
   {name: "Bard", username: "bard", password: "password"},
-  {name: "Ahamed", username: "ahamed1", password: "1234", password_confirmation: "1234"},
-  {name: "Daniel", username: "damndaniel", password: "password", password_confirmation: "password"},
-  {name: "Joe", username: "joe", password: "5678", password_confirmation: "5678"},
-  {name: "Brie", username: "brie", password: "91011", password_confirmation: "91011"},
-  {name: "Shun", username: "theshun", password: "shunthis", password_confirmation: "shunthis"}
 ]
 
 usr_list.each do |hash|
@@ -46,7 +41,7 @@ end
 end
 
 5.times do
-  @title = Faker::Lovecraft.unique.tome[0..19]
+  @title = Faker::LordOfTheRings.location[0..19]
   @date = Faker::Date.forward(23)
   @location = Faker::Address.state
   @details = Faker::Hipster.paragraph
